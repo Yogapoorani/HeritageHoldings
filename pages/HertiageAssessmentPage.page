@@ -1,0 +1,18 @@
+<apex:page controller="HertiageAssessmentController">
+<apex:form > 
+        <apex:pageBlock title="Repetition Counter:">
+            Enter the list of strings as comma-separated values <p/>
+            <apex:inputtext value="{!stringValue}"/> <p/>
+            <apex:commandButton action="{!save}" value="Find Count"/> <p/>
+            Count: <p/>
+            <apex:outputText value="{!Counter}"/>
+        </apex:pageBlock>
+        <apex:pageBlock title="Walk tracker: ">
+            Enter the directions to walk as comma-separated values <p/>
+            <apex:inputtext value="{!walkString}"/> <p/>
+            <apex:commandButton action="{!save1}" value="Check"/> <p/>
+            Status : <p/>
+            <apex:outputText value="{!Check}"/>
+        </apex:pageBlock>
+    </apex:form> 
+</apex:page>
